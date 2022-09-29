@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
 type Props = {};
+type Input = any;
+type Inputs = any;
 type FormData = {
   name: string;
   email: string;
@@ -12,7 +14,7 @@ type FormData = {
 
 export default function ContactMe({}: Props) {
   const { register, handleSubmit } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (formData) => {
+  const onSubmit: SubmitHandler<Input> = (formData) => {
     window.location.href = `mailto:contact.shahdarsh@gmail.com?subject=${formData.subject}&body=Hi,my Name is ${formData.name}.${formData.message}`;
   };
 
@@ -21,13 +23,13 @@ export default function ContactMe({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col relative h-screen overflow-hidden text-left md:text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center z-0"
+      className=" flex flex-col relative h-screen overflow-hidden text-left md:text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center z-0"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-400 text-2xl">
         Contact
       </h3>
       <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
+        <h4 className="text-4xl font-semibold text-center ">
           Hey There You need me & I know that.
           <span className="underline decoration-[#A85CF9]/60">Lets Talk.</span>
         </h4>
