@@ -13,12 +13,14 @@ export default function Projects({}: Props) {
       ProjectTitle: "Healthyfyyy IoT based System",
       ProjectDescription:
         "The IoT Based Health Care System is the affordable healthcare device for patients and doctors. It provides a solution for the measurement of body parameters like ECG, Temperature, Pulse rate, and Oxygen level.",
+      ProjectLink: "https://github.com/Darshhhhh/Healthyfyy-IoT-based-system",
     },
     {
       projectCover: NetflixClone,
       ProjectTitle: "Netflix Clone",
       ProjectDescription:
         " Netflix 2.0 app that has a Log In and Log Out Authentication with Google.It has a beautiful Home Screen with all the movies looking just like Netflix.There is also a subscription page where you can see your active monthly subscription.",
+      ProjectLink: "https://github.com/Darshhhhh/Netflix-clone-ReactJs",
     },
   ]);
   return (
@@ -37,7 +39,7 @@ export default function Projects({}: Props) {
             <>
               <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
                 <motion.img
-                  className="w-[400px]"
+                  className="w-[300px]"
                   initial={{
                     y: -300,
                     opacity: 0,
@@ -56,17 +58,20 @@ export default function Projects({}: Props) {
                     <span className="underline decoration-[#000]/70">
                       Project {i + 1} of {projects.length}:
                     </span>
+                    <br />
                     &nbsp;{project.ProjectTitle}
                   </h4>
                   <p className="text-sm text-center md:text-left">
                     {project.ProjectDescription}
                   </p>
                 </div>
+                <p>Swipe to see more projects...</p>
               </div>
             </>
           );
         })}
       </div>
+
       <div className="w-full absolute top-[30%] bg-[#A85CF9]/30 left-0 h-[500px] -skew-y-12" />
     </motion.div>
   );

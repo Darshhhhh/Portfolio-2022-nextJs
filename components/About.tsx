@@ -48,12 +48,11 @@ export default function About({}: Props) {
           Background
         </h4>
         <p className="text-sm">
-          My name is Darsh Shah🚀, and I work as a web developer, UI designer,
-          and content creator.I'm currently 23 years old and work as a Web
-          developer💻.currently I'm learning various tech stacks to improve my
-          knowledge and skills over time. apart from my professional career I'm
-          also a content creator on youtube where im making content based on
-          video editing and photoshop.
+          My name is Darsh Shah🚀, and I work as a web developer and user
+          interface designer. I am currently 23 years old. To gradually advance
+          my knowledge and skills, I'm learning a variety of technological
+          stacks. Besides my professional career, I am a content creator on
+          YouTube, creating content based on video editing and Photoshop.
         </p>
       </div>
     </motion.div>
