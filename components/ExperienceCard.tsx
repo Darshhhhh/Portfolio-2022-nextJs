@@ -15,7 +15,7 @@ export default function ExperienceCard({}: Props) {
   const [JobData, setJobData] = useState([
     {
       companyLogo: InfolabzLogo,
-      jobTitle: "Web Developer",
+      jobTitle: "Web Developer Intern",
       comapanyName: "InfoLabz PVT LTD.",
       skills: {
         React: ReactLogo,
